@@ -15,8 +15,8 @@ function findById(id){
     return db('users').where({ id }).first()
 }
 
-function filtering(all) {
-    return db('users').where(all).first()
+function filtering(login) {
+    return db('users').where(login).first()
 }
 
 async function insert(user) {

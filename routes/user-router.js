@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const restricted  = require('../middleware/restricted.js')
+const restricted  = require('../middleware/jwot.js')
 const Users = require('../models/user-model.js')
 router.get('/', restricted, (req,res) => {
     Users.get()
